@@ -1,0 +1,53 @@
+localhost:8080/sdci/equipo/registro
+{
+    "nombreEquipo": "Equipo 3",
+    "colorEquipo": "Azul",
+    "mascota": "Rata"
+}
+
+
+localhost:8080/sdci/participante/registro
+
+{
+    "equipo":{
+        "id": 2
+    },
+    "carrera": "Telecomunicaciones",
+    "codigo": 20125426,
+    "tipoParticipante": "Suplente"
+}
+
+localhost:8080/sdci/deporte/registro
+
+{
+    "nombreDeporte": "Ballet",
+    "pesoDeporte": 2
+}
+
+localhost:8080/sdci/partido/registro
+
+{
+    "equipoA": { "id": 3 },
+    "equipoB": { "id": 4 },
+    "scoreA": 4,
+    "scoreB": 5,
+    "deporte_iddeporte": { "id": 1 },
+    "horaFecha": "2000-11-01T00:00:00Z"
+}
+
+localhost:8080/sdci/partido/getparticipantes
+
+
+{
+    "id": 3
+}
+
+localhost:8080/sdci/partido/getparticipantes?id=4
+{
+    "id": 3
+}
+
+localhost:8080/sdci/partido/gethistorialpartidos
+
+localhost:8080/sdci/partido/gethistorialpartidos?idequipo=3
+
